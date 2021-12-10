@@ -1,0 +1,196 @@
+/* ############## body ############## */
+body {
+    font-family: 'NMCF_fontL_otf', 'Nanum Gothic';
+    --text-color: #222;
+    --bkg-color: #fff;
+    --easy-color: rgba(239, 239, 239, 0.3);
+    --title-color: rgba(246, 246, 246, 0.7);
+}
+body.dark-theme {
+    font-family: 'NMCF_fontL_otf', 'Nanum Gothic';
+    --text-color: #fff;
+    --bkg-color: #222;
+    --easy-color: rgba(110, 110, 110, 1);
+    --title-color: rgba(246, 246, 246, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      font-family: 'NMCF_fontL_otf', 'Nanum Gothic';
+      --text-color: #fff;
+      --bkg-color: #222;
+      --easy-color: rgba(239, 239, 239, 0.3);
+      --title-color: rgba(246, 246, 246, 0.7);
+    }
+    body.light-theme {
+      font-family: 'NMCF_fontL_otf', 'Nanum Gothic';
+      --text-color: #222;
+      --bkg-color: #fff;
+      --easy-color: rgba(110, 110, 110, 1);
+      --title-color: rgba(246, 246, 246, 0.3);
+    }
+}
+
+body {
+    background: var(--bkg-color);
+}
+
+div, p, textarea {
+    color: var(--text-color);
+}
+
+/* ############## div ############## */
+.container{
+    min-width: 20%;
+    max-width: 85%;
+    margin: auto;
+    padding-top: 40px;
+}
+.mode{
+    text-align: right;
+    float: right;
+}
+/* .title{
+    
+} */
+.title_exp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.contents{
+    display: flex;
+    margin: auto;
+}
+.write_diff{
+    min-width: 20%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+    box-shadow: 0 0 3px 2px rgb(29 85 134 / 35%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.write_easy{
+    min-width: 20%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+    box-shadow: 0 0 3px 2px rgb(229 90 90 / 35%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.word_dict{
+    min-width: 10%;
+    max-width: 20%;
+    min-height: 10%;
+    max-height: 20%;
+    box-shadow: 0 0 3px 2px rgb(34 139 34 / 35%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.div_button{
+    text-align: right;
+    margin-top: 10px;
+}
+#loading{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* ############## img ############## */
+.title_img{
+    margin-right: 25px;
+    vertical-align: middle;
+}
+.loading_img{
+    width: 80px;
+    height: 80px;
+}
+
+/* ############## p ############## */
+.title_header{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'NMCF_fontM_otf';
+    color: forestgreen;
+    vertical-align: middle;
+}
+.title_explain{
+    font-size: 16px;
+    line-height: 30px;
+    background: var(--title-color);
+    font-family: 'NMCF_fontM_otf';
+    padding: 10px 20px;
+}
+.write_header{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ############## textarea ############## */
+textarea{
+    font-family: 'NMCF_fontM_otf';
+}
+.write_ta{
+    resize: none;
+    width: 1000px;
+    height: 400px;
+    min-width: 20%;
+    max-width: calc(100% - 20px);
+    min-height: 10%;
+    max-height: calc(100% - 50px);
+    font-size: 18px;
+    line-height: 1.5rem;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+#easy_ta{
+    background-color: var(--easy-color);
+}
+textarea:focus { 
+    outline: solid 1px #8dc63f;
+    box-shadow: 0 0 2px #8dc63f;
+    border-color: #719ECE;
+    box-shadow: 0 0 2px #719ECE;
+}
+
+/* ############## button ############## */
+.btn-toggle{
+    border-radius: 5px;
+    border: 1px solid skyblue;
+    background-color: rgba(0,0,0,0);
+    color: skyblue;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-toggle:hover{
+    color: white;
+    background-color: skyblue;
+}
+.predict_button {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(22, 54, 38, 0.4) 0 0px 0px 2px inset;
+    cursor: pointer;
+}
+
+.predict_button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+
+/* ############## span ############## */
+.wd_dict{
+    color: red;
+}

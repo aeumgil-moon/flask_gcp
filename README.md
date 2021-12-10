@@ -1,0 +1,1 @@
+# Flask로 만든 애움길 프로젝트를 Google Cloud Platform에 올리는 작업입니다.
